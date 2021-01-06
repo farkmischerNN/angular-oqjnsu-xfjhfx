@@ -48,6 +48,7 @@ validatingForm: FormGroup;
           },
       fieldGroup: [
           {
+            key: 'income3',
             type: 'input',
             templateOptions: {
               required: true,
@@ -57,6 +58,7 @@ validatingForm: FormGroup;
             template: '<span>per</span>'
           },
           {
+            key: 'income',
             type: 'input',
             templateOptions: {
               type: 'number',
