@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { MonthlyExpensesComponent } from '../monthly-expenses/monthly-expenses.component';
 import { AnnualExpensesComponent } from '../annual-expenses/annual-expenses.component';
 import { ChangeOfIncomeComponent } from '../change-of-income/change-of-income.component';
 import { StudentPageModalComponent } from '../student-page-modal/student-page-modal.component';
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'annual-expenses',
     component: AnnualExpensesComponent,
+  },
+  {
+    path: 'monthly-expenses',
+    component: MonthlyExpensesComponent,
   },
 ];
 

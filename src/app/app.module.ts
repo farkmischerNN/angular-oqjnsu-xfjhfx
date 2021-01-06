@@ -11,6 +11,7 @@ import { StudentPageModalModule } from '../student-page-modal/student-page-modal
 import { StudentPageModule } from '../student-page/student-page.module';
 import { ChangeOfIncomeModule } from '../change-of-income/change-of-income.module';
 import { AnnualExpensesModule } from '../annual-expenses/annual-expenses.module';
+import { MonthlyExpensesModule } from '../monthly-expenses/monthly-expenses.module';
 
 @NgModule({
   declarations: [ 
@@ -25,6 +26,7 @@ import { AnnualExpensesModule } from '../annual-expenses/annual-expenses.module'
     StudentPageModule,
     ChangeOfIncomeModule,
     AnnualExpensesModule,
+    MonthlyExpensesModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ],
