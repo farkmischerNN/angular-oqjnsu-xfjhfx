@@ -16,6 +16,7 @@ import { AssetsAndLiabilitiesModule } from '../assets-and-liabilities/assets-and
 import { TaxableIncomeModule } from '../taxable-income/taxable-income.module';
 import { ApplicantModule } from '../applicant/applicant.module';
 import { CoApplicantModule } from '../co-applicant/co-applicant.module';
+import { AdditionalQuestionsModule } from '../additional-questions/additional-questions.module';
 
 @NgModule({
   declarations: [ 
@@ -35,6 +36,7 @@ import { CoApplicantModule } from '../co-applicant/co-applicant.module';
     TaxableIncomeModule,
     ApplicantModule,
     CoApplicantModule,
+    AdditionalQuestionsModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ],

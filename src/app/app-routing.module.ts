@@ -10,6 +10,7 @@ import { AssetsAndLiabilitiesComponent } from '../assets-and-liabilities/assets-
 import { TaxableIncomeComponent } from '../taxable-income/taxable-income.component';
 import { ApplicantComponent } from '../applicant/applicant.component';
 import { CoApplicantComponent } from '../co-applicant/co-applicant.component';
+import { AdditionalQuestionsComponent } from '../additional-questions/additional-questions.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'co-applicant',
     component: CoApplicantComponent,
+  },
+  {
+    path: 'additional-questions',
+    component: AdditionalQuestionsComponent,
   },
 ];
 
