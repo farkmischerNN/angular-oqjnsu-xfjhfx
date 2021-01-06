@@ -9,6 +9,7 @@ import { StudentPageComponent } from '../student-page/student-page.component';
 import { AssetsAndLiabilitiesComponent } from '../assets-and-liabilities/assets-and-liabilities.component';
 import { TaxableIncomeComponent } from '../taxable-income/taxable-income.component';
 import { ApplicantComponent } from '../applicant/applicant.component';
+import { CoApplicantComponent } from '../co-applicant/co-applicant.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'applicant',
     component: ApplicantComponent,
+  },
+  {
+    path: 'co-applicant',
+    component: CoApplicantComponent,
   },
 ];
 
