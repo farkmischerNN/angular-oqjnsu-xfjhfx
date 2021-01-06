@@ -34,27 +34,71 @@ validatingForm: FormGroup;
       }
     },
     {
+      key: 'showGroupSection',
       type: 'checkbox',
       className: 'col-12',
       templateOptions:{
-        label: 'Label Name',
+        label: 'Show Group Section (Working)',
       },
+    },    
+    {
+      type: 'repeat-group',
+      expressionProperties: {
+            'templateOptions.disabled': '!model.showGroupSection',
+          },
+      fieldGroup: [
+          {
+            type: 'input',
+            templateOptions: {
+              required: true,
+            },
+          },
+          {
+            template: '<span>per</span>'
+          },
+          {
+            type: 'input',
+            templateOptions: {
+              type: 'number',
+            },
+          },
+        ],
     },
     {
-      fieldGroupClassName: "row",
-      fieldGroup: [
-        {
-          wrappers: [''],
-          type: 'input',
-          className: 'col-3',
-        },
-        {
-          wrappers: ['per-prefix'],
-          type: 'input',
-          className: 'col-9',
-        }
-      ]
-    },
+      key: 'showArraySection',
+      type: 'checkbox',
+      className: 'col-12',
+      templateOptions:{
+        label: 'Show Array Section (Not Working)',
+      },
+    }, 
+    {
+      key: 'arraySections',
+      type: 'repeat9',
+      expressionProperties: {
+            'templateOptions.disabled': '!model.showArraySection',
+          },      
+      fieldArray: { 
+        fieldGroup: [
+          {
+            type: 'input',
+            key: 'input1',
+            templateOptions: {
+              required: true,
+            },
+          },
+          {
+            template: '<span>per</span>'
+          },
+          {
+            type: 'input',
+            templateOptions: {
+              type: 'number',
+            },
+          },
+        ],
+      },
+    },    
   ];
 
   constructor() {
@@ -75,6 +119,13 @@ validatingForm: FormGroup;
       income3: 3,
       income4: 4,
       income5: 5,
+      showGroupSection: true,
+      showArraySection: true,
+      arraySections: [
+        {
+          input1: 1,
+        },
+      ]
     });
   }
 
