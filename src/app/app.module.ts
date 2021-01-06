@@ -9,6 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StudentPageModalModule } from '../student-page-modal/student-page-modal.module';
 import { StudentPageModule } from '../student-page/student-page.module';
+import { ChangeOfIncomeModule } from '../change-of-income/change-of-income.module';
 
 @NgModule({
   declarations: [ 
@@ -21,6 +22,7 @@ import { StudentPageModule } from '../student-page/student-page.module';
     ReactiveFormsModule,
     StudentPageModalModule,
     StudentPageModule,
+    ChangeOfIncomeModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ],
