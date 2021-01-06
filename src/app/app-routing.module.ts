@@ -7,6 +7,7 @@ import { ChangeOfIncomeComponent } from '../change-of-income/change-of-income.co
 import { StudentPageModalComponent } from '../student-page-modal/student-page-modal.component';
 import { StudentPageComponent } from '../student-page/student-page.component';
 import { AssetsAndLiabilitiesComponent } from '../assets-and-liabilities/assets-and-liabilities.component';
+import { TaxableIncomeComponent } from '../taxable-income/taxable-income.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'assets-and-liabilities',
     component: AssetsAndLiabilitiesComponent,
+  },
+  {
+    path: 'taxable-income',
+    component: TaxableIncomeComponent,
   },
 ];
 
