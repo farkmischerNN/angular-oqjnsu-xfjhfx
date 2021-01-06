@@ -8,6 +8,7 @@ import { StudentPageModalComponent } from '../student-page-modal/student-page-mo
 import { StudentPageComponent } from '../student-page/student-page.component';
 import { AssetsAndLiabilitiesComponent } from '../assets-and-liabilities/assets-and-liabilities.component';
 import { TaxableIncomeComponent } from '../taxable-income/taxable-income.component';
+import { ApplicantComponent } from '../applicant/applicant.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'taxable-income',
     component: TaxableIncomeComponent,
+  },
+  {
+    path: 'applicant',
+    component: ApplicantComponent,
   },
 ];
 

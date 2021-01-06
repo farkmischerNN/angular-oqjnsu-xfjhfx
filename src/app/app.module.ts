@@ -14,6 +14,7 @@ import { AnnualExpensesModule } from '../annual-expenses/annual-expenses.module'
 import { MonthlyExpensesModule } from '../monthly-expenses/monthly-expenses.module';
 import { AssetsAndLiabilitiesModule } from '../assets-and-liabilities/assets-and-liabilities.module';
 import { TaxableIncomeModule } from '../taxable-income/taxable-income.module';
+import { ApplicantModule } from '../applicant/applicant.module';
 
 @NgModule({
   declarations: [ 
@@ -31,6 +32,7 @@ import { TaxableIncomeModule } from '../taxable-income/taxable-income.module';
     MonthlyExpensesModule,
     AssetsAndLiabilitiesModule,
     TaxableIncomeModule,
+    ApplicantModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ],
