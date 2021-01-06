@@ -17,6 +17,7 @@ import { TaxableIncomeModule } from '../taxable-income/taxable-income.module';
 import { ApplicantModule } from '../applicant/applicant.module';
 import { CoApplicantModule } from '../co-applicant/co-applicant.module';
 import { AdditionalQuestionsModule } from '../additional-questions/additional-questions.module';
+import { NonTaxableIncomeModule } from '../nontaxable-income/nontaxable-income.module';
 
 @NgModule({
   declarations: [ 
@@ -37,6 +38,7 @@ import { AdditionalQuestionsModule } from '../additional-questions/additional-qu
     ApplicantModule,
     CoApplicantModule,
     AdditionalQuestionsModule,
+    NonTaxableIncomeModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ],

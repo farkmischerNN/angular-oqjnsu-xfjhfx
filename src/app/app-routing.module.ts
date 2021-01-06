@@ -11,6 +11,7 @@ import { TaxableIncomeComponent } from '../taxable-income/taxable-income.compone
 import { ApplicantComponent } from '../applicant/applicant.component';
 import { CoApplicantComponent } from '../co-applicant/co-applicant.component';
 import { AdditionalQuestionsComponent } from '../additional-questions/additional-questions.component';
+import { NonTaxableIncomeComponent } from '../nontaxable-income/nontaxable-income.component';
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: 'additional-questions',
     component: AdditionalQuestionsComponent,
+  },
+  {
+    path: 'nontaxable-income',
+    component: NonTaxableIncomeComponent,
   },
 ];
 
