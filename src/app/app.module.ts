@@ -12,6 +12,7 @@ import { StudentPageModule } from '../student-page/student-page.module';
 import { ChangeOfIncomeModule } from '../change-of-income/change-of-income.module';
 import { AnnualExpensesModule } from '../annual-expenses/annual-expenses.module';
 import { MonthlyExpensesModule } from '../monthly-expenses/monthly-expenses.module';
+import { AssetsAndLiabilitiesModule } from '../assets-and-liabilities/assets-and-liabilities.module';
 
 @NgModule({
   declarations: [ 
@@ -27,6 +28,7 @@ import { MonthlyExpensesModule } from '../monthly-expenses/monthly-expenses.modu
     ChangeOfIncomeModule,
     AnnualExpensesModule,
     MonthlyExpensesModule,
+    AssetsAndLiabilitiesModule,
     FormlyModule.forRoot({ extras: { lazyRender: true } }),
     FormlyBootstrapModule,
     ],

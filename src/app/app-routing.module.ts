@@ -6,6 +6,7 @@ import { AnnualExpensesComponent } from '../annual-expenses/annual-expenses.comp
 import { ChangeOfIncomeComponent } from '../change-of-income/change-of-income.component';
 import { StudentPageModalComponent } from '../student-page-modal/student-page-modal.component';
 import { StudentPageComponent } from '../student-page/student-page.component';
+import { AssetsAndLiabilitiesComponent } from '../assets-and-liabilities/assets-and-liabilities.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'monthly-expenses',
     component: MonthlyExpensesComponent,
+  },
+  {
+    path: 'assets-and-liabilities',
+    component: AssetsAndLiabilitiesComponent,
   },
 ];
 
